@@ -2,7 +2,7 @@ require "character"
 require 'rspec'
 
 describe "Char" do 
-    let(:ike) { Char.new("Ike", "blue") }
+    let(:ike) { Char.new("Ike", 0) }
 
 
     describe "#initialize" do 
@@ -11,7 +11,7 @@ describe "Char" do
         end
 
         it "sets the allegiance to an input string" do
-            expect(ike.allegiance).to eq("blue")
+            expect(ike.allegiance).to eq(0)
         end
     end
 
