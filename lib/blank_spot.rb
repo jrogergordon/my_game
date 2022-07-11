@@ -1,0 +1,2 @@
+class BlankSpot
+end

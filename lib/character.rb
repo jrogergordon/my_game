@@ -1,5 +1,5 @@
 require_relative "skills"
-class Char
+class Character
     include Skills
 
 
