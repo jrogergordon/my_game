@@ -10,7 +10,7 @@ describe "Move" do
 
     describe "#possible_moves" do
         it "returns an array of all possible moves, given a board, location on the board, and move 'points' " do
-            expect(game.possible_moves(@board, pos, 1, checked_moves, available_moves)).to include?([0,0])
+            expect(game.possible_moves(game.board, pos, 1, checked_moves, available_moves)).to eq([0,0])
         end
     end
 

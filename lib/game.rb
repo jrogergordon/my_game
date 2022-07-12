@@ -6,7 +6,7 @@ class Game
     include Move
 
     def initialize(x = 7, y = 7)
-        @board = Array.new(x) { Array.new(y) { BlankSpot.new } }
+        @board = Array.new(13) { Array.new(13) { BlankSpot.new } }
         @board.each do |column|
             column.each do |spot|
                 spot = BlankSpot.new
